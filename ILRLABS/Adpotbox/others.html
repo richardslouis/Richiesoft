@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Others | pay.richiesoft</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<meta name="description" content="Pay.richiesoft runs campaign in Glueping, Clothing, Finiup, Eptro, Magpoke, 0bc.xyz & Paperbooklet"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<nav>
+						<img src="images/logo.png" width="200px"><br><br><br>
+						<p><b><u>Select your category</u><br>Powered by Adpotbox</b></p><br>
+							<ul>
+								<li><a href="index.html"><< Back</a></li>
+								<li><a href="#wire">Wire Transfer</a></li>
+								<li><a href="#cheque">Cheque</a></li>
+							</ul>
+							<br><br>
+								<p><a href="https://richiesoft.com/finiup" target="_blank">What is Finiup?</a></p>
+								<!--<li><a href="#elements">Elements</a></li>-->
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						
+						<!-- START WIRE FORM -->
+							<article id="wire">
+								<h2 class="major">Wire Pay</h2>
+								<form method="post" action="send_wire_email.php" class="contact-form">
+									<div class="field">
+										<label for="type"><b>Transfer type</b></label>
+										 <select name="type" id="type" required>
+											<option value="select">-- Select --</option>
+    										<option value="IMPS (India only)">IMPS (India only)</option>
+    										<option value="NEFT (India only)">NEFT (India only)</option>
+    										<option value="Forex (Global)">Forex (Global)</option>
+    										<option value="RTGS (India only)">RTGS (India only)</option>
+											<option value="Wire (Global)">Wire (Global)</option>
+											<!--<option value="NEFT (India only)">NEFT (India only)</option>
+											<option value="ACH (US Local Bank only)">ACH (US Local Bank only)</option>
+											<option value="SEPA (European Local Bank only)">SEPA (European Local Bank only)</option>
+											<option value="BACS (UK Local Bank only)">BACS (UK Local Bank only)</option>
+											<option value="FPS (UK Local Bank only)">FPS (UK Local Bank only)</option>
+											<option value="Zengin System (Japanese local bank)">Zengin System (Japanese local bank)</option>-->
+  										  </select>
+									</div>
+									<div class="field half first">
+										<label for="name">Company Name</label>
+										<input type="text" name="name" id="name" required/>
+									</div>
+									<div class="field half">
+										<label for="product">Ad-slot Product</label>
+										<select name="product" id="product" required>
+    										<option value="select">-- Select --</option>
+											<!--<option value="Glueping">Glueping</option>
+    										<option value="Clothing">Clothing</option>-->
+    										<option value="Finiup">Finiup</option>
+    										<!--<option value="Magpoke">Magpoke</option>
+											<option value="Eptro">Eptro</option>
+											<option value="Glueping Bundle">Glueping (Bundle)</option>
+    										<option value="Clothing Bundle">Clothing (Bundle)</option>
+    										<option value="Finiup Bundle">Finiup (Bundle)</option>
+    										<option value="Magpoke Eptro">Magpoke + Eptro</option>-->
+  										  </select>
+									</div>
+									<div class="field half first">
+										<label for="bank"><b>Bank Name</b></label>
+										<input type="text" name="bank" id="bank" required/>
+									</div>
+									<div class="field half">
+										<label for="reference"><b>Reference Number</b></label>
+										<input type="text" name="reference" id="reference" required/>
+									</div>
+									<div class="field half first">
+										<label for="paid_to"><b>Paid to</b></label>
+										  <select name="paid_to" id="paid_to" required>
+											<option value="select">-- Select --</option>
+    										<option value="Axis Bank, India">Axis Bank, India</option>
+    										<!--<option value="Standard Chartered, India">Standard Chartered, India</option>
+    										<option value="WireCard, Germany">WireCard, Germany</option>
+    										<option value="Barclays, UK">Barclays, UK</option>-->
+											<option value="ChaseBank, US">ChaseBank, US</option>
+											<!--<option value="Bank of Tokyo-Mitsubishi UFJ, Japan">Bank of Tokyo-Mitsubishi UFJ, Japan</option>-->
+  										  </select>
+									</div>
+									<div class="field half">
+										<label for="currency"><b>Currency</b></label>
+										<select name="currency" id="currency" required>
+    										<option value="select">-- Select --</option>
+											<option value="INR">INR</option>
+    										<option value="Euro">Euro</option>
+    										<option value="GBP">GBP</option>
+    										<option value="USD">USD</option>
+											<option value="JPY">JPY</option>
+  										  </select>
+									</div>
+									<div class="field half first">
+										<label for="amount"><b>Amount</b></label>
+										<input type="text" name="amount" id="amount" required/>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" required/>
+									</div>
+									<div class="field half first">
+										<label for="phone">Mobile/Phone</label>
+										<input type="text" name="phone" id="phone" required/>
+									</div>	
+									<div class="field half">
+										<label for="person">Contact Person</label>
+										<input type="text" name="person" id="person" required/>
+									</div>
+									
+									<br><p align="center">Kindly note, that the Wire amount should reflect in 
+									our Bank account to process requirement and it takes from 1-6 working days.</p>	
+									<div align="center">
+									
+									<ul class="actions">
+										<li><input type="submit" id="submit" name="submit" value="Record PayDetails" class="special" disabled /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+									
+									</div>
+								</form>
+								
+						<!-- END WIRE FORM -->
+						</article>	
+							
+						<!-- START CHEQUE FORM -->
+							<article id="cheque">
+								<h2 class="major">Cheque (INR)</h2>
+								<form method="post" action="send_form_email.php" class="contact-form">
+									<div class="field half first">
+										<label for="name">Company Name</label>
+										<input type="text" name="name" id="name" required/>
+									</div>
+									<div class="field half">
+										<label for="product">Ad-slot Product</label>
+										<select name="product" id="product" required>
+    										<option value="select">-- Select --</option>
+											<!--<option value="Glueping">Glueping</option>
+    										<option value="Clothing">Clothing</option>-->
+    										<option value="Finiup">Finiup</option>
+    										<!--<option value="Magpoke">Magpoke</option>
+											<option value="Eptro">Eptro</option>
+											<option value="Glueping Bundle">Glueping (Bundle)</option>
+    										<option value="Clothing Bundle">Clothing (Bundle)</option>
+    										<option value="Finiup Bundle">Finiup (Bundle)</option>
+    										<option value="Magpoke Eptro">Magpoke + Eptro</option>-->
+  										  </select>
+										<!--<input type="text" name="product" id="product" required/>-->
+									</div>
+									<div class="field half first">
+										<label for="bank"><b>Bank Name</b></label>
+										<input type="text" name="bank" id="bank" required/>
+									</div>
+									<div class="field half">
+										<label for="cheque"><b>Cheque Number</b></label>
+										<input type="text" name="cheque" id="cheque" required/>
+									</div>
+									<div class="field half first">
+										<label for="amount"><b>Amount (INR)</b></label>
+										<input type="text" name="amount" id="amount" required/>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" required/>
+									</div>
+									<div class="field half first">
+										<label for="phone">Mobile/Phone</label>
+										<input type="text" name="phone" id="phone" required/>
+									</div>	
+									<div class="field half">
+										<label for="person">Contact Person</label>
+										<input type="text" name="person" id="person" required/>
+									</div>
+									
+									<br><p align="center">Kindly slash cheques before mailing.</p>	
+									<div align="center">
+									
+									<ul class="actions">
+										<li><input type="submit" id="submit" name="submit" value="Record PayDetails" class="special" disabled /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+									
+									</div>
+								</form>
+						
+							<!-- END CHEQUE FORM -->
+							
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">2013-19 &copy; Richiesoft | Adpotbox</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

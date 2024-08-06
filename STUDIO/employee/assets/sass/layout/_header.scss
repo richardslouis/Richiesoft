@@ -1,0 +1,15 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+
+/* Header */
+
+	#header {
+		@include padding(3em, 2.25em);
+
+		h1 {
+			font-size: 2.25em;
+			font-weight: _font(weight-bold);
+		}
+	}
